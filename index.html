@@ -1,0 +1,172 @@
+<html>
+<!--
+Author: Jugbot
+Web Background for Wallpaper Engine
+SVG credit to Freepik, Eleanor Wang, and Egor Rumyantsev. 
+-->
+<head>
+    <title>Pixelfield</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./jquery/spectrum.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery/custom.js"></script>
+    <script type="text/javascript" src="./jquery/spectrum.js"></script>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <canvas id="pixelfield">html5 canvas not supported, what a dissapointment you are...</canvas>
+    <div id="wrapper">
+        <!--<div id="more">?</div>-->
+        <div id="hide"></div>
+		<div id="arrow"></div>
+		<div id="middlebar">
+			<div id="none" class="block-none"></div>
+            <div id="swatches">
+                <div class="block swatch" style="background-color: rgb(255, 255, 255);"	></div>
+                <div class="block swatch" style="background-color: rgb(228, 228, 228);"	></div>
+                <div class="block swatch" style="background-color: rgb(136, 136, 136);"	></div>
+                <div class="block swatch" style="background-color: rgb(34, 34, 34);"	></div>
+                <div class="block swatch" style="background-color: rgb(255, 167, 209);"	></div>
+                <div class="block swatch" style="background-color: rgb(229, 0, 0);"		></div>
+                <div class="block swatch" style="background-color: rgb(229, 149, 0);"	></div>
+                <div class="block swatch" style="background-color: rgb(160, 106, 66);"	></div>
+                <div class="block swatch" style="background-color: rgb(229, 217, 0);"	></div>
+                <div class="block swatch" style="background-color: rgb(148, 224, 68);"	></div>
+                <div class="block swatch" style="background-color: rgb(2, 190, 1);"		></div>
+                <div class="block swatch" style="background-color: rgb(0, 211, 221);"	></div>
+                <div class="block swatch" style="background-color: rgb(0, 131, 199);"	></div>
+                <div class="block swatch" style="background-color: rgb(0, 0, 234);"		></div>
+                <div class="block swatch" style="background-color: rgb(207, 110, 228);"	></div>
+                <div class="block swatch" style="background-color: rgb(130, 0, 128);"	></div>
+            </div>
+			<div id="palettes"></div>
+		</div>
+		<div id="rightbar">
+			<div id="open" class="block"></div>
+			<div id="save" class="block"></div>
+			<div id="clear" class="block"></div>
+		</div>
+    </div>
+	<div id="blackout">
+		<div id="popup">
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: rgb(255, 255, 255);"	></div>
+                <div class="block" style="background-color: rgb(228, 228, 228);"	></div>
+                <div class="block" style="background-color: rgb(136, 136, 136);"	></div>
+                <div class="block" style="background-color: rgb(34, 34, 34);"	></div>
+                <div class="block" style="background-color: rgb(255, 167, 209);"	></div>
+                <div class="block" style="background-color: rgb(229, 0, 0);"		></div>
+                <div class="block" style="background-color: rgb(229, 149, 0);"	></div>
+                <div class="block" style="background-color: rgb(160, 106, 66);"	></div>
+                <div class="block" style="background-color: rgb(229, 217, 0);"	></div>
+                <div class="block" style="background-color: rgb(148, 224, 68);"	></div>
+                <div class="block" style="background-color: rgb(2, 190, 1);"		></div>
+                <div class="block" style="background-color: rgb(0, 211, 221);"	></div>
+                <div class="block" style="background-color: rgb(0, 131, 199);"	></div>
+                <div class="block" style="background-color: rgb(0, 0, 234);"		></div>
+                <div class="block" style="background-color: rgb(207, 110, 228);"	></div>
+                <div class="block" style="background-color: rgb(130, 0, 128);"	></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #ffffff"></div>
+                <div class="block" style="background-color: #000000"></div>
+                <div class="block" style="background-color: #b53e1e"></div>
+                <div class="block" style="background-color: #000624"></div>
+                <div class="block" style="background-color: #08aec4"></div>
+                <div class="block" style="background-color: #cad6d6"></div>
+                <div class="block" style="background-color: #48494b"></div>
+                <div class="block" style="background-color: #190000"></div>
+                <div class="block" style="background-color: #eef2f3"></div>
+                <div class="block" style="background-color: #5d7b73"></div>
+                <div class="block" style="background-color: #c3c9c9"></div>
+                <div class="block" style="background-color: #dedee0"></div>
+                <div class="block" style="background-color: #43c8c3"></div>
+                <div class="block" style="background-color: #e8d6d4"></div>
+                <div class="block" style="background-color: #f37721"></div>
+                <div class="block" style="background-color: #815a5b"></div>
+                <div class="block" style="background-color: #6e1205"></div>
+                <div class="block" style="background-color: #03948f"></div>
+                <div class="block" style="background-color: #d59e99"></div>
+                <div class="block" style="background-color: #e2dfb6"></div>
+                <div class="block" style="background-color: #84aba6"></div>
+                <div class="block" style="background-color: #d8d4ae"></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #a9a89b"	></div>
+                <div class="block" style="background-color: #eaad90"	></div>
+                <div class="block" style="background-color: #6d5042"	></div>
+                <div class="block" style="background-color: #db7777"></div>
+                <div class="block" style="background-color: #e4c2a6"	></div>
+                <div class="block" style="background-color: #a7b07b"	></div>
+                <div class="block" style="background-color: #281f20"	></div>
+                <div class="block" style="background-color: #329ea1"	></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #88394c"	></div>
+                <div class="block" style="background-color: #cf7692"	></div>
+                <div class="block" style="background-color: #d3b867"	></div>
+                <div class="block" style="background-color: #b6d168"></div>
+                <div class="block" style="background-color: #4d876f"	></div>
+                <div class="block" style="background-color: #56658c"	></div>
+                <div class="block" style="background-color: #4fadbf"	></div>
+                <div class="block" style="background-color: #e7e7dd"	></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #201513"	></div>
+                <div class="block" style="background-color: #e01c28"	></div>
+                <div class="block" style="background-color: #dd8fa7"	></div>
+                <div class="block" style="background-color: #33a89f"></div>
+                <div class="block" style="background-color: #c4ded1"	></div>
+                <div class="block" style="background-color: #48b8e0"	></div>
+                <div class="block" style="background-color: #039ef0"	></div>
+                <div class="block" style="background-color: #e0b69e"	></div>
+                <div class="block" style="background-color: #f0cab7"	></div>
+                <div class="block" style="background-color: #d05187"	></div>
+                <div class="block" style="background-color: #fee007"	></div>
+                <div class="block" style="background-color: #ffffff"	></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #876c57"	></div>
+                <div class="block" style="background-color: #473535"	></div>
+                <div class="block" style="background-color: #ece3d4"	></div>
+                <div class="block" style="background-color: #82c1ed"></div>
+                <div class="block" style="background-color: #f3871b"	></div>
+                <div class="block" style="background-color: #fafa5e"	></div>
+                <div class="block" style="background-color: #fefc8d"	></div>
+                <div class="block" style="background-color: #4f95ea"	></div>
+                <div class="block" style="background-color: #fefbd0"	></div>
+                <div class="block" style="background-color: #577543"	></div>
+            </div>
+            <div class="palette">
+                <div class="smallbutton largeconfirmpalette"></div>
+                <div class="block" style="background-color: #62b1d8"	></div>
+                <div class="block" style="background-color: #93cc5b"	></div>
+                <div class="block" style="background-color: #e5bb67"	></div>
+                <div class="block" style="background-color: #9972e5"></div>
+                <div class="block" style="background-color: #e67b67"	></div>
+                <div class="block" style="background-color: #4d515c"	></div>
+            </div>
+			<div id="createpalette" class="palette">
+				<img src="resources/plus.svg" id="plusimg"/>
+                <p><i>(create palette)</i></p>
+			</div>
+		</div>
+	</div>
+    <div id="savebar"></div>
+    <!--<div id="about">
+        <h1>Pixelfield</h1>
+        <div>
+            <img id="Jugbot" src="http://cdn.edgecast.steamstatic.com/steamcommunity/public/images/avatars/70/703d9337177de6985adfb23a139726b097ec6908_full.jpg"/>
+            <h2>by Jugbot</h2>
+        </div>
+    </div>-->
+</body>
+
+</html>
