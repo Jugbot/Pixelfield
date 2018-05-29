@@ -95,6 +95,13 @@ window.wallpaperPropertyListener = {
         }
     }
 };
+defaultproperties = {
+	toolbarheight:{value: 5},
+	backcolor:{value: '0.1328125 0.1328125 0.1328125'},
+	pixelscale:{value: 20},
+	paletteleft:{value: 50},
+	overlay:{value: 9}
+}
 
 function createPixel(x,y,color) {
 	drawPixel(x,y,color,ctx);
@@ -161,7 +168,9 @@ $(document).ready(function() {
 	initCanvas();
 	loadPixels();
 	loadPalettes();
-    
+    //Initializing starting values in case its running without wallpaper engine:
+	window.wallpaperPropertyListener.applyUserProperties(defaultproperties);
+	
     $('.newcolor').spectrum({
         color: 'grey',
         change: function(color) {
