@@ -1,4 +1,4 @@
 # Pixelfield
 ## Pixelart editor web app for Wallpaper Engine.
 
-<img src="images/main.jpg" width="30%"></img> <img src="images/ex.jpg" width="30%"></img> <img src="images/size.jpg" width="30%"></img> <img src="images/palettes.jpg" width="35.1286764706%"></img> <img src="images/settings.jpg" width="35.1286764706%"></img> <img src="images/style.jpg" width="19.7426470588%"></img> 
+<img src="images/main.png" width="30%"></img> <img src="images/ex.png" width="30%"></img> <img src="images/size.png" width="30%"></img> <img src="images/palettes.png" width="35.1286764706%"></img> <img src="images/settings.png" width="35.1286764706%"></img> <img src="images/style.png" width="19.7426470588%"></img> 
